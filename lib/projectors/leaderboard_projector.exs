@@ -46,7 +46,7 @@ defmodule Projectors.Leaderboard do
   def rerank(scores) when is_map(scores) do
     scores
     |> Map.to_list()
-    |> Enum.sort(fn {_k1, val1}, {_k2, val2} -> val1 => val2 end)
+    |> Enum.sort(fn {_k1, val1}, {_k2, val2} -> val1 >= val2 end)
     |> Enum.take(10)
   end
 end
