@@ -1,4 +1,4 @@
-defmodule Projectors.Leaderboad do
+defmodule Projectors.Leaderboard do
   use GenServer
   require Logger
 
