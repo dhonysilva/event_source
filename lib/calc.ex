@@ -7,7 +7,7 @@ defmodule Calc do
   end
 
   def handle_command(%{value: val}, %{cmd: :sub, value: v}) do
-    %{event_type: :value_subtracted, value: min(@min_state_value - val, v)}
+    %{event_type: :value_subtracted, value: max(@min_state_value - val, v)}
   end
 
   def handle_command(%{value: val}, %{cmd: :mul, value: v})
