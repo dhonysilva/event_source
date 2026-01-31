@@ -5,8 +5,8 @@ defmodule FlightTracker.Application do
   def start(_type, _args) do
     children = [
       Cloudevents,
-      {FlightTracker.FileInjector, ["./sample_cloudevents.json"]},
       {FlightTracker.MessageBroadcaster, []},
+      {FlightTracker.FileInjector, ["./sample_cloudevents.json"]},
       {FlightTracker.CraftProjector, []},
       {FlightTracker.FlightNotifier, "AMC421"}
     ]
