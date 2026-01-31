@@ -41,8 +41,8 @@ defmodule FlightTracker.MessageBroadcaster do
     new_cloudevent("aircraft_identified", msg)
   end
 
-  defp to_event(%{type: :sqawk_received, message: %{sqawk: _squawk, icao_address: _icao} = msg}) do
-    new_cloudevent("sqawk_received", msg)
+  defp to_event(%{type: :squawk_received, message: %{squawk: _squawk, icao_address: _icao} = msg}) do
+    new_cloudevent("squawk_received", msg)
   end
 
   defp to_event(%{
