@@ -11,6 +11,7 @@ Read and Write models.
 
 ### Laws
 
+- All events are immutable and exist in the past
 - All data required for a Projection must be on the Events
 
 Projectors as `GenServers`
