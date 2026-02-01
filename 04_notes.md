@@ -1,4 +1,4 @@
-Some works to keep in mind:
+Some words to keep in mind:
 
 - commands
 - events
