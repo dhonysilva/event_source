@@ -16,7 +16,7 @@ Is responsible for managing stateful, long-running processes. Requires multiple 
 
 A process manager is the inverse of an aggregate: it consumes events and emits commands.
 
-Process managers are coreographers who help event-sourced systems dance.
+Process managers are choreographers who help event-sourced systems dance.
 
 
 ### Laws
