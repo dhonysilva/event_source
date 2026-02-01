@@ -60,7 +60,7 @@ defmodule Batch.ProcessManager do
         file_map,
         fn {_f, status} -> status == :success end
       ) ->
-        :sucess
+        :success
 
       Enum.any?(
         file_map,
