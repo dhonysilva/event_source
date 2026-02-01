@@ -7,7 +7,7 @@ defmodule FlightTracker.Application do
       # Cloudevents,
       # {FlightTracker.MessageBroadcaster, []},
       # {FlightTracker.FileInjector, ["./sample_cloudevents.json"]},
-      # {FlightTracker.CraftProjector, []}
+      # {FlightTracker.CraftProjector, []},
       # {FlightTracker.FlightNotifier, "AMC421"}
     ]
 
